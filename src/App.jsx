@@ -1,20 +1,13 @@
-import React, { useState } from "react";
-import { ChildComp } from "./ChildComp";
+import React from "react";
+import "./App.css";
+import TodoList from "./TodoList";
+
+
 
 function App() {
-  const [value, setValue] = useState("");
-
-  const handleInputChange = (value) => {
-    setValue(value);
-    console.log(value);
-  };
-
-  return (
-    <>
-    <ChildComp value={value} handleInputChange = {handleInputChange}/>
-   </>
-    );
-
-};
+  return( 
+    <TodoList/> 
+    )
+}
 
 export default App;
